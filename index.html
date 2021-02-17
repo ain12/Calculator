@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="calculator-style">
+      <input
+        type="text"
+        name="display"
+        id="screen"
+        class="display"
+        maxlength="16"
+        value=""
+      />
+      <div class="calculator-buttons">
+        <!--getNum will be the function for numbers, getOp for operators, getResult for the result and allClear to erase-->
+        <button class="btn" id="seven" value="7" onClick="getNum('7')">
+          7
+        </button>
+        <button class="btn" id="eight" value="8" onClick="getNum('8')">
+          8
+        </button>
+        <button class="btn" id="nine" value="9" onClick="getNum('9')">9</button>
+        <button class="operator" value="+" onClick="getOp('+')">+</button>
+        <button class="btn" value="4" onClick="getNum('4')">4</button>
+        <button class="btn" value="5" onClick="getNum('5')">5</button>
+        <button class="btn" value="6" onClick="getNum('6')">6</button>
+        <button class="operator" value="-" onClick="getOp('-')">-</button>
+        <button class="btn" value="1" onClick="getNum('1')">1</button>
+        <button class="btn" value="2" onClick="getNum('2')">2</button>
+        <button class="btn" value="3" onClick="getNum('3')">3</button>
+        <button class="operator" value="*" onClick="getOp('*')">*</button>
+        <button class="operator" id="clear-all" value="C" onClick="allClear()">
+          C
+        </button>
+        <button class="btn" value="0" onClick="getNum('0')">0</button>
+        <button class="btn" value="=" onClick="getResult()">=</button>
+        <button class="operator" value="/" onClick="getOp('/')">/</button>
+      </div>
+    </div>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
