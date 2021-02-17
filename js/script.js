@@ -12,3 +12,9 @@ function getOp(op) {
 function allClear() {
   document.getElementById("screen").value = "0";
 }
+
+function getResult() {
+  document.getElementById("screen").value = eval(
+    document.getElementById("screen").value
+  );
+}
