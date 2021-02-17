@@ -10,11 +10,11 @@ function getOp(op) {
 
 //Borrar la pantalla
 function allClear() {
-  document.getElementById("screen").value = "0";
+  document.getElementById("screen").value = "";
 }
 
 function getResult() {
-  document.getElementById("screen").value = eval(
-    document.getElementById("screen").value
-  );
+  // "eval" para que ejecute toda la operación dentro de la pantalla (los valores), independientemente de si es suma, resta, etc.
+  var display = document.getElementById("screen").value;
+  document.getElementById("screen").value = eval(display);
 }
